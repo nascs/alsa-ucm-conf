@@ -1,0 +1,28 @@
+Source: alsa-ucm-conf
+Section: libs
+Priority: optional
+Maintainer: Debian ALSA Maintainers <pkg-alsa-devel@lists.alioth.debian.org>
+Uploaders: Jordi Mallach <jordi@debian.org>,
+           Elimar Riesebieter <riesebie@lxtec.de>,
+           Luke Yelavich <themuso@ubuntu.com>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.7.2
+Homepage: https://www.alsa-project.org/
+Vcs-Git: https://salsa.debian.org/alsa-team/alsa-ucm-conf.git
+Vcs-Browser: https://salsa.debian.org/alsa-team/alsa-ucm-conf
+Rules-Requires-Root: no
+
+Package: alsa-ucm-conf
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}, libasound2t64
+Description: ALSA Use Case Manager configuration files
+ This package contains ALSA Use Case Manager configuration of audio
+ input/output names and routing for specific audio hardware. They can be
+ used with the alsaucm tool.
+ .
+ Installing these configuration files is absolutely necessary to make some
+ sound hardware work. Its installation is highly recommended in order to
+ use ALSA-backed hardware.
+ .
+ ALSA is the Advanced Linux Sound Architecture.
