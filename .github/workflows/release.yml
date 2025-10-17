@@ -17,6 +17,7 @@ jobs:
       - name: Test
         run: |
           sudo apt-get update
+          sudo apt install -y lintian debhelper devscripts build-essential fakeroot dh-make
           sudo apt-get build-dep --no-install-recommends -y .
           sudo apt-get install --no-install-recommends -y git-buildpackage
           export DEBEMAIL="dev@radxa.com"
